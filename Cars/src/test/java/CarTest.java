@@ -23,4 +23,14 @@ public class CarTest {
     public void getColor() {
         assertEquals("Red", car.getColor());
     }
+
+    @Test
+    public void getEngineSize() {
+        assertEquals(3.5, ((Car) car).getEngineSize(), 0.001);
+    }
+
+    @Test
+    public void getEngineFullTank() {
+        assertEquals(100, ((Car) car).getEngineFullTank(), 0.001);
+    }
 }

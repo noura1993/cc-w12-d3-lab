@@ -6,4 +6,12 @@ public class Car extends Vehicle{
         super(price, color);
         this.engine = engine;
     }
+
+    public double getEngineSize() {
+        return this.engine.getSize();
+    }
+
+    public int getEngineFullTank() {
+        return this.engine.getFullTank();
+    }
 }
